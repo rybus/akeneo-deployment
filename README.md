@@ -174,6 +174,7 @@ You can also specify which branch you want to deploy by using
 bundle exec cap staging deploy BRANCH=hotfix
 ```
 
-### Resources
-- [Capistrano](https://github.com/capistrano/capistrano)
+### See also
+- [Capistrano documentation](http://capistranorb.com)
+- [Capistrano repository](https://github.com/capistrano/capistrano)
 - [Symfony for Capistrano](https://github.com/capistrano/symfony)
