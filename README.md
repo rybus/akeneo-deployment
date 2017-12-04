@@ -159,7 +159,7 @@ The remote file structure will be the following, with `/deploy/to` being the val
         └── uploads
 ```
 
-*Important* you have to create `parameters.yml` on the remote server before the first deployment.
+**Important** you have to create `parameters.yml` on the remote server before the first deployment.
 
 ### Deployment
 You can deploy on the staging environment by running
