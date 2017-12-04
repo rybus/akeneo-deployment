@@ -13,7 +13,7 @@ hosted on a Git repository.
 
 ## Ruby and Capistrano installation
 
-1. Install Ruby [installation procedure](https://www.ruby-lang.org/fr/documentation/installation/#apt).
+1. Install Ruby: [installation procedure](https://www.ruby-lang.org/fr/documentation/installation/#apt).
 2. Create a Gemfile at the root of the project, with the following content:
 
 ```ruby
@@ -173,3 +173,7 @@ You can also specify which branch you want to deploy by using
 ```shell
 bundle exec cap staging deploy BRANCH=hotfix
 ```
+
+### Resources
+- [Capistrano](https://github.com/capistrano/capistrano)
+- [Symfony for Capistrano](https://github.com/capistrano/symfony)
