@@ -20,7 +20,7 @@ hosted on a Git repository.
 source "https://rubygems.org"
 
 gem 'capistrano'
-gem 'capistrano-symfony'
+gem 'capistrano-symfony', '~> 1.0.0.rc1'
 gem 'capistrano-composer'
    ```
 3. Install Bundler and the dependencies from the Gemfile
@@ -79,7 +79,7 @@ set :repo_url, 'git@github.com:acme/project.git'
 
 set :format, :pretty
 set :log_level, :info
-set :symfony_env,  "staging"
+set :symfony_env,  "prod"
 set :symfony_directory_structure, 3
 set :sensio_distribution_version, 4
 set :app_path, "app"
