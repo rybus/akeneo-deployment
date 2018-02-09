@@ -93,7 +93,7 @@ set :branch, ENV.fetch("BRANCH", "master")
 set :composer_install_flags, '--no-dev --prefer-dist --no-interaction --optimize-autoloader'
 
 set :linked_files, %w{app/config/parameters.yml}
-set :linked_dirs, %w{var/logs web/uploads}
+set :linked_dirs, %w{var/logs web/uploads app/file_storage}
 
 set :controllers_to_clear, ["app_*.php"]
 
@@ -151,6 +151,7 @@ The remote file structure will be the following, with `/deploy/to` being the val
 ├── revisions.log
 └── shared
     ├── app
+    |   ├── file_storage
     |   └── config
     |        └── parameters.yml # Create this file.
     ├── var

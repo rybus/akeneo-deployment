@@ -17,7 +17,7 @@ set :branch, ENV.fetch("BRANCH", "master")
 set :composer_install_flags, '--no-dev --prefer-dist --no-interaction --optimize-autoloader'
 
 set :linked_files, %w{app/config/parameters.yml}
-set :linked_dirs, %w{var/logs web/uploads}
+set :linked_dirs, %w{var/logs web/uploads app/file_storage}
 
 set :controllers_to_clear, ["app_*.php"]
 
