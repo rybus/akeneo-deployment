@@ -26,7 +26,7 @@ gem 'capistrano-composer'
 3. Install Bundler and the dependencies from the Gemfile
 
 ```shell
-gem install bundler
+sudo gem install bundler
 bundle install
 ```
 
@@ -115,6 +115,7 @@ namespace :deploy do
                 symfony_console('cache:warmup', '--env=prod')
                 execute *%w[ rm -rf node_modules; npm install; npm run ]
                 execute *%w[ yarn run webpack ]
+                execute *%w[ partners_clear_cache ]
             end
         end
     end
