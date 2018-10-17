@@ -27,7 +27,7 @@ gem 'capistrano-composer'
 
 ```shell
 sudo gem install bundler
-bundle install
+bundle install --path vendor/bundle
 ```
 
 This file lists the bundles to install from the official Ruby repository. More info about Gemfiles [here](http://bundler.io/v1.16/guides/creating_gem.html).
